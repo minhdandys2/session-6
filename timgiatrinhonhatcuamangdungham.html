@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm giá trị nhỏ nhất của mạng</title>
+</head>
+<body>
+    <script>
+        function minArray(arr) {
+            if (arr.length == 0) {
+                return -1;
+            }
+            let min = arr[0];
+            let index=0;
+            for (let i = 1;i < arr.length;i++) {
+                if (arr[i]<min) {
+                    min = arr[i];
+                    index = i ;
+                }
+            }
+            return index;
+        }
+        let arr1 = [2,1,6,4,5,6];
+        let arr2 =[7, 12, 6, 9, 20, 56, 89];
+        let arr3 =[];
+        let arr4 =[0, 0, 0, 0, 0, 0];
+        let index1 = minArray(arr1);
+        let index2 = minArray(arr2);
+        let index3 = minArray(arr3);
+        let index4 = minArray(arr4);
+        document.write("giá trị nhỏ nhất trong mảng ở vị trí : arr1[" + index1 + "] <br>");
+        document.write("giá trị nhỏ nhất trong mảng ở vị trí : arr2[" + index2 + "] <br>");
+        document.write("giá trị nhỏ nhất trong mảng ở vị trí : arr3[" + index3 + "] <br>");
+        document.write("giá trị nhỏ nhất trong mảng ở vị trí : arr4[" + index4 + "] <br>");
+    </script>
+        
+</body>
+</html>
