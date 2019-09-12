@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body onload="findConstellation()">
+<div id="result"></div>
+<script>
+    let search = prompt("bạn cần tìm gì?");
+    let ngoisao = ['Polaris', 'Aldebaran','Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let chomsao = ['UrsaMinor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'UrsaMajor', 'Leo'];
+
+    function findConstellation() {
+        for (let i = 0; i < ngoisao.length; i++) {
+            if (search === ngoisao[i]) {
+                document.getElementById("result").innerHTML = search + " thuộc chòm sao " + chomsao[i];
+                break;
+            } else {
+                document.getElementById("result").innerHTML = "không có kết quả!";
+            }
+        }
+    }
+</script>
+</body>
+</html>
