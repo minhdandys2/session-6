@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body>
+    <script>
+        let num1 = parseInt(prompt("so nguyen thu 1"));
+        let num2 = parseInt(prompt("so nguyen thu 2"));
+        let num3 = parseInt(prompt("so nguyen thu 3"));
+        let min;
+        function checkNumber(a,b,c) {
+            if (a < b && a < c) {
+                min = a;
+                return min;
+            } else if (b<a && b<c) {
+                min = b;
+                return min;
+            }else if (c<a && c<b) {
+                min = c;
+                return min;
+            }
+        }
+        let result = checkNumber(num1,num2,num3);
+        alert("so nho nhat la: "+result);
+    </script>
+</body>
+</html>

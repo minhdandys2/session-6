@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 6</title>
+</head>
+<body>
+    <script>
+        let num = prompt("nhập số ");
+        num = Number(num);
+        result = checkNumber(num);
+        if (result == true) {
+            alert(num + " là số nguyên dương")
+        }else {
+            alert(num + " không phải là số nguyên dương")
+        }
+
+        function checkNumber(inp) {
+            if (inp<=0) {
+                return false
+            }else {
+                Number.isInteger(inp);
+                return Number.isInteger(inp);
+            }
+        }
+    </script>
+</body>
+</html>

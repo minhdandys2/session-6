@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+    <script>
+        function tinhDienTich(banKinh) {
+            let dienTich = banKinh*banKinh*Math.PI;
+            return dienTich;
+        }
+
+        function tinhChuVi(banKinh) {
+            let chuVi = 2*banKinh*Math.PI;
+            return chuVi;
+        }
+        let r = prompt("nhap ban kinh ");
+        let dienTich = tinhDienTich(r);
+        let chuVi = tinhChuVi(r);
+        alert("Chu vi la: " + chuVi+ "; Dien tich la: " + dienTich)
+    </script>
+</body>
+</html>

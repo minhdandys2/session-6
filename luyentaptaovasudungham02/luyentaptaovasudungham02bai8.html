@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 8</title>
+</head>
+<body>
+    <script>
+        let soLuongSo = parseInt(prompt("nhập số lượng số  nguyên"));
+        let mangSoNguyen =nhapMangSoNguyen(soLuongSo);
+
+        function nhapMangSoNguyen(soLuongSo) {
+            let mangSoNguyen = []
+            for (let i=0;i<soLuongSo;i++) {
+            mangSoNguyen.push(prompt("nhập số nguyên thứ "+i));
+            }
+            return mangSoNguyen;
+        }
+
+        mangSoNguyen.reverse();
+        alert("mảng số nguyên đã đảo ngược: " + mangSoNguyen)
+    </script>
+</body>
+</html>

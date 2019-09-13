@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 9</title>
+</head>
+<body>
+    <script>
+        let soLuongKiTu = parseInt(prompt("nhập số lượng số kí tự cần cho vào mạng"));
+        let mangKiTu =nhapMangKiTu(soLuongKiTu);
+
+        function nhapMangKiTu(soLuongKiTu){
+            let mangKiTu=[];
+            for (let i=0;i<soLuongKiTu;i++) {
+                mangKiTu.push(prompt("nhập kí tự thứ "+i));
+            }
+            return mangKiTu;
+        }
+
+        function checkCharacter(mangKiTu) {
+            let character = prompt("nhập kí tự: ");
+            let count = 0;
+            for (let i=0;i<mangKiTu.length;i++) {
+                if (character === mangKiTu[i]) {
+                    count++;
+                }
+            }
+            return count = (count > 0)? count:-1
+        }
+        let result = checkCharacter(mangKiTu);
+        alert(result)
+    </script>
+</body>
+</html>

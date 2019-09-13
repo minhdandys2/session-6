@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+    <script>
+        function tinhGiaiThua(num) {
+            let result =num;
+            if (num === 0|| num ===1){
+                return 1;
+            }
+            while (num>1){
+                num --;
+                result *= num;
+            }
+            return result;
+        }
+        let so = prompt("nhap so can tinh giai thua");
+        so = Number(so);
+        let giaiThua = tinhGiaiThua(so);
+        alert(so + "! = "+ giaiThua)
+    </script>
+</body>
+</html>
